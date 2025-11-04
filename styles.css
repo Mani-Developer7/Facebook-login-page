@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Full viewport height to center content vertically */
+    min-height: 100vh; 
+    background-color: #F0F2F5; /* Lighter background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    padding: 72px 0 112px 0; /* Add top/bottom padding for vertical alignment */
+}
+
+.box {
+    /* Overall container width and layout for left/right sections */
+    width: 980px; 
+    height: auto;
+    display: flex;
+    justify-content: space-between; /* Space out the text and form */
+    align-items: flex-start; /* Align sections to the top */
+    padding-top: 58px; /* Push the content slightly down from the top center point */
+}
+
+/* --- Left Text Section (txt) --- */
+
+.txt {
+    width: 500px;
+    padding-right: 32px;
+    margin-bottom: 20px;
+    padding-left: 0; /* Removing previous excessive margin */
+}
+
+.txt h1 {
+    font-size: 64px; /* Slightly larger for 'facebook' text */
+    color: #1877F2;
+    margin-bottom: 16px;
+    line-height: 70px;
+}
+
+.txt p {
+    font-size: 28px; /* Slightly larger text */
+    color: #1c1e21;
+    width: 100%;
+    line-height: 32px;
+}
+
+/* --- Right Form Section (form-container) --- */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 396px;
+}
+
+.form {
+    width: 100%;
+    height: auto; 
+    background-color: #FFFFFF;
+    border-radius: 8px; /* Slightly more rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); 
+    padding: 15px; 
+    display: flex; 
+    flex-direction: column;
+}
+
+/* Consistent spacing for form elements */
+.input1, .input2 {
+    margin-bottom: 12px;
+}
+
+.button1 {
+    margin-bottom: 12px;
+}
+
+/* Input Fields */
+.form input {
+    width: 100%;
+    height: 52px; 
+    padding: 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #1877F2; 
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+/* Login Button */
+.button1 button {
+    width: 100%;
+    height: 48px;
+    background-color: #1877F2;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button1 button:hover {
+    background-color: #166FE5;
+}
+
+/* Forgot Password Link */
+.link {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0 15px 0; /* Space above the divider */
+}
+
+.link a {
+    color: #1877F2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal Divider Line */
+.divider {
+    border-top: 1px solid #dadde1;
+    width: 100%;
+    margin: 0 0 20px 0; 
+}
+
+/* Create New Account Button Wrapper */
+.button2-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Create New Account Button */
+.button2-wrapper button {
+    padding: 0 16px;
+    height: 48px;
+    background-color: #42b72a;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button2-wrapper button:hover {
+    background-color: #36a420;
+}
+
+/* Create a Page Link */
+.create-page {
+    font-size: 14px;
+    color: #1c1e21;
+    margin-top: 25px;
+}
+
+.create-page a {
+    color: #1c1e21;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.create-page a:hover {
+    text-decoration: underline;
+}
